@@ -1,13 +1,13 @@
 ## Submit a feature request or bug report
 
-- [ ] I've read the [code of conduct](https://github.com/TypistTech/trellis-newrelic-php/blob/master/CODE_OF_CONDUCT.md)
+- [ ] I've read the [code of conduct](https://github.com/TypistTech/trellis-hetrixtools-php/blob/master/CODE_OF_CONDUCT.md)
 - [ ] This is a feature request
 - [ ] This is a bug report
-- [ ] This request isn't a duplicate of an [existing issue](https://github.com/TypistTech/trellis-newrelic-php/issues)
-- [ ] I've read the project [readme](https://github.com/TypistTech/trellis-newrelic-php) and followed them (if applicable)
+- [ ] This request isn't a duplicate of an [existing issue](https://github.com/TypistTech/trellis-hetrixtools-php/issues)
+- [ ] I've read the project [readme](https://github.com/TypistTech/trellis-hetrixtools-php) and followed them (if applicable)
 - [ ] I've read the [Trellis docs](https://roots.io/trellis/docs) and followed them (if applicable)
 - [ ] This is not a Trellis support request that should be posted on the [Roots Discourse](https://discourse.roots.io/c/trellis) forums or [Trellis' issue tracker](https://github.com/roots/trellis/issues)
-- [ ] This is not a New Relic support request that should be reported to [New Relic support team](https://support.newrelic.com/)
+- [ ] This is not a HetrixTools support request that should be reported to [HetrixTools support team](https://support.hetrixtools.com/)
 
 Replace any `X` with your information.
 

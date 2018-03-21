@@ -1,15 +1,22 @@
 ---
-- name: Trust New Relic GPG key
-  apt_key:
-    url: 'https://download.newrelic.com/548C16BF.gpg'
+- user:
+    name: hetrixtools
+    group: sudo
 
-- name: Configure New Relic apt repository
-  apt_repository:
-    repo: 'deb http://apt.newrelic.com/debian/ newrelic non-free'
+- name: Modify HetrixTool agent
+  template:
+    src: hetrixtools_agent.sh.j2
+    dest: "/etc/hetrixtools/hetrixtools_agent.sh"
 
-- name: Install New Relic PHP agent
-  apt:
-    name: newrelic-php5
-    state: "{{ newrelic_package_state }}"
-    update_cache: yes
-    cache_valid_time: "{{ apt_cache_valid_time }}"
+- name: Let HetrixTools know we're setting everyting up
+  uri:
+    url: https://sm.hetrixtools.com/
+    method: 'POST'
+    body: v=install&s={{ wordpress_sites[item].hetrixtools.sid }}
+  with_items: "{{ sites_using_hetrixtools }}"
+
+- name: Add HetrixTools Agent Cronjob
+  cron:
+    name: "HetrixTools Agent Cronjob"
+    job: "bash /etc/hetrixtools/hetrixtools_agent.sh >> /etc/hetrixtools/hetrixtools_cron.log 2>&1"
+    user: hetrixtools

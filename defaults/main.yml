@@ -1,10 +1,6 @@
-newrelic_package_state: latest
+hetrixtools_config_default:
+  services: "nginx,mysql,php7.1-fpm,fail2ban,ferm,cron,ntp,ssh"
 
-newrelic_config_default:
-  license: "{{ vault_newrelic_license }}"
-  appname: "{{ wordpress_sites.keys() | first }} {{ env }}"
-  framework: wordpress
-  logfile: /var/log/newrelic/php_agent.log
-  daemon.logfile: /var/log/newrelic/newrelic-daemon.log
+hetrixtools_config_combined: "{{ hetrixtools_config_default | combine(hetrixtools_config | default({})) }}"
 
-newrelic_config_combined: "{{ newrelic_config_default | combine(newrelic_config | default({})) }}"
+sites_using_hetrixtools: "[{% for name, site in wordpress_sites.iteritems() if site.hetrixtools.enabled %}'{{ name }}',{% endfor %}]"

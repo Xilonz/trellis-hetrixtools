@@ -1,8 +1,8 @@
 galaxy_info:
-  author: Tang Rufus
-  description: Install New Relic PHP agent on Trellis servers
-  company: Typist Tech
-  issue_tracker_url: https://github.com/TypistTech/trellis-newrelic-php/issues
+  author: Arjan Steenbergen
+  description: Install HetrixTools Agent on Trellis servers
+  company: Steenbergen Design
+  issue_tracker_url: https://github.com/Xilonz/trellis-hetrixtools
   license: MIT
   min_ansible_version: 2.3
   platforms:
@@ -12,6 +12,6 @@ galaxy_info:
   galaxy_tags:
     - trellis
     - wordpress
-    - newrelic
+    - hetrixtools
     - monitoring
 dependencies: []
