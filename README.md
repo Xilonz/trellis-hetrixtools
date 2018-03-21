@@ -1,4 +1,4 @@
-# Trellis HetrixTools PHP Agent
+# Trellis HetrixTools Agent
 
 Install [HetrixTools agent](https://docs.hetrixtools.com/category/server-monitor/) on [Trellis](https://github.com/roots/trellis) servers
 
