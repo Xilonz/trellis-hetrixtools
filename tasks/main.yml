@@ -1,7 +1,8 @@
 ---
-- fail:
-    msg: vault_newrelic_license is not defined
-  when: vault_newrelic_license is not defined
+- name: Checking if SIDs are defined
+  fail:
+    msg: hetrixtool SID for {{item}} is not defined
+  when: wordpress_sites[item].hetrixtools.sid is not defined
+  with_items: "{{ sites_using_hetrixtools }}"
 
 - include: install.yml
-- include: ini.yml
