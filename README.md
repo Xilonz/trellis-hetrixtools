@@ -1,4 +1,6 @@
 # Trellis HetrixTools Agent
+**Not maintained. We moved our monitoring to [Nixstats](https://github.com/steenbergen-design/trellis-nixstats) and now use the [Nixstats trellis](https://github.com/steenbergen-design/trellis-nixstats) role.** If you want to maintain this role please [send me an email](mailto:arjan@steenbergen.design)
+
 
 Install [HetrixTools agent](https://docs.hetrixtools.com/category/server-monitor/) on [Trellis](https://github.com/roots/trellis) servers
 
@@ -48,7 +50,7 @@ Pull requests are welcomed.
 
 Special thanks to [the Roots team](https://roots.io/about/) whose [Trellis](https://github.com/roots/trellis) make this project possible, and [TypistTech](https://github.com/TypistTech/) for the [inspiration](https://github.com/TypistTech/trellis-newrelic-php/).
 
-Full list of contributors can be found [here](https://github.com/Xilonz/trellis-hetrixtools/graphs/contributors).
+Full list of contributors can be found [here](https://github.com/steenbergen-design/trellis-hetrixtools/graphs/contributors).
 
 ## Contributing
 
@@ -56,4 +58,4 @@ Please see [CODE_OF_CONDUCT](./CODE_OF_CONDUCT.md) for details.
 
 ## License
 
-[Trellis HetrixTools Agent](https://github.com/Xilonz/trellis-hetrixtools) is released under the [MIT License](https://opensource.org/licenses/MIT).
+[Trellis HetrixTools Agent](https://github.com/steenbergen-design/trellis-hetrixtools) is released under the [MIT License](https://opensource.org/licenses/MIT).
